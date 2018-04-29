@@ -10,7 +10,7 @@ class UserController extends Controller
 
     public function index()
     {
-        $users = User::orderBy('name', 'asc')->get();
+        $users = User::orderBy('id', 'asc')->get();
         return view('user.index', ['users' => $users]);
     }
 
@@ -33,15 +33,15 @@ class UserController extends Controller
     public function show($id)
     {
         $users = User::find($id);
-        return view('user.show', ['users' => $users]);
+        return view('user.index', ['users' => $users]);
     }
 
 
     public function edit($id)
     {
-        $users = User::find($id);
+        $user = User::find($id);
 
-        return view('user.edit', array('users' =>$users));
+        return view('user.edit', array('user' =>$user));
     }
 
 
@@ -51,7 +51,7 @@ class UserController extends Controller
         $users->fill($request->all());
         $users->save();
 
-        return redirect('home')->with('warning', 'Ažurirano.');
+        return redirect('/')->with('warning', 'Ažurirano.');
     }
 
 
@@ -62,5 +62,22 @@ class UserController extends Controller
         $users->delete();
 
         return redirect('/users')->with('danger', 'Izbrisano.');
+    }
+
+    public function userEdit($id)
+    {
+        $user = User::find($id);
+
+        return view('user.uedit', array('user' =>$user));
+    }
+
+
+    public function userUpdate(Request $request, $id)
+    {
+        $users = User::find($id); //find faculty with id
+        $users->fill($request->all());
+        $users->save();
+
+        return redirect('/')->with('warning', 'Ažurirano.');
     }
 }

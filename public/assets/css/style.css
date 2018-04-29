@@ -37,6 +37,7 @@ html {
 }
 
 body {
+
 	font-family: 'Open Sans', sans-serif;
 	font-size: 15px;
 	letter-spacing: 0.5px;
@@ -55,9 +56,9 @@ ul li {
 	line-height: 1.59;
 }
 
-a { 
+a {
 	text-decoration: none;
-	color: #2f2f2f;  
+	color: #2f2f2f;
 }
 
 a:hover,
@@ -82,25 +83,25 @@ h1 {
 	font-size: 38px;
 }
 
-h2 {  
-	font-size: 32px; 
-	line-height: 1.13; 
+h2 {
+	font-size: 32px;
+	line-height: 1.13;
 }
 
-h3 {  
-	font-size: 26px;  
+h3 {
+	font-size: 26px;
 }
 
-h4 {  
-	font-size: 22px;  
+h4 {
+	font-size: 22px;
 }
 
-h5 {  
-	font-size: 20px;  
+h5 {
+	font-size: 20px;
 }
 
-h6 {  
-	font-size: 18px;  
+h6 {
+	font-size: 18px;
 }
 
 img {
@@ -109,7 +110,7 @@ img {
 }
 
 code {
-	background-color: #ee6e73;
+	background-color: #d9534f;
 	border-radius: 2px;
 	color: #fff;
 	padding: 2px 4px;
@@ -155,7 +156,7 @@ blockquote {
 	background-color: #f8f8f8;
 	border-radius: 0 4px 4px 0;
 	padding: 5px 15px;
-	
+
 }
 
 blockquote p {
@@ -221,8 +222,9 @@ button:focus {
 /*--------------------*/
 
 #mu-hero {
-	background-image: url("assets/images/head-featured-bg.jpg");
+	background-image: url('../images/people.jpg');
 	display: inline;
+	height: 100%;
 	float: left;
 	width: 100%;
 	background-position: center center;
@@ -232,10 +234,13 @@ button:focus {
 }
 
 .mu-hero-overlay {
+
+
 	display: inline;
 	float: left;
 	opacity: 0.94;
 	width: 100%;
+	height: 100%;
 }
 
 .mu-logo-area {
@@ -250,7 +255,7 @@ button:focus {
 	font-family: 'Montserrat', sans-serif;
 	display: inline-block;
 	font-weight: 600;
-	background: #fff;
+
 	padding: 5px 20px;
 	margin-bottom: 30px;
 }
@@ -357,12 +362,15 @@ button:focus {
 /*--------------------*/
 
 #mu-hero .navbar-default {
+
 	background-color: #fff;
 	border-color: #e7e7e7;
 	padding: 5px 0;
+
 }
 
 .mu-navbar {
+	
 	top: -150px;
 	transition: all 0.5s;
 }
@@ -373,7 +381,7 @@ button:focus {
 
 #mu-hero .navbar-default .navbar-brand {
 	padding: 15px 15px;
-	font-size: 28px;
+	font-size: 30px;
 	line-height: 20px;
 }
 
@@ -384,8 +392,8 @@ button:focus {
 	transition: all 0.5s;
 }
 
-.navbar-default .navbar-nav > .active > a, 
-.navbar-default .navbar-nav > .active > a:focus, 
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
 .navbar-default .navbar-nav > .active > a:hover {
 	color: #fff;
 }
@@ -436,7 +444,7 @@ button:focus {
 .mu-about-right {
 	display: inline;
 	float: left;
-	margin-top: 30px;
+	margin-top: 0px;
 	width: 100%;
 }
 
@@ -448,7 +456,7 @@ button:focus {
 
 
 #mu-video {
-	background-image: url("assets/images/about-video-bg.jpg");
+	background-image: url('../images/people.jpg');
 	background-attachment: fixed;
 	background-position: center center;
 	-webkit-background-size: cover;
@@ -717,7 +725,7 @@ button:focus {
 
 
 #mu-speakers {
-	background-color: #fff;
+	background-color: #f8f8f8;
 	display: inline;
 	float: left;
 	width: 100%;
@@ -760,9 +768,17 @@ button:focus {
 	width: 100%;
 }
 
+.mu-single-speakers img {
+	height: 230px;
+	width: 230px;
+	float: left;
+	border-radius: 50%;
+	margin-right: 35px;
+}
+
 .mu-single-speakers-info h3 {
 	margin-bottom: 4px;
-	font-size: 22px;
+	font-size: 16px;
 }
 
 .mu-single-speakers-info p {
@@ -785,6 +801,84 @@ button:focus {
 	transition: all 0.5s;
 }
 
+/*--------------------*/
+/* TEAM */
+/*--------------------*/
+
+
+#mu-team {
+	background-color: #f8f8f8;
+	display: inline;
+	float: left;
+	width: 100%;
+}
+
+.mu-team-area {
+	display: inline;
+	float: left;
+	padding: 100px 0;
+	width: 100%;
+}
+
+.mu-team-content{
+	display: inline;
+	float: left;
+	margin-top: 50px;
+	width: 100%;
+}
+
+.mu-single-team {
+	padding: 10px 10px;
+	outline: none;
+	text-align: left;
+	-webkit-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+}
+
+.mu-team-slider .slick-next {
+	right: -60px;
+}
+
+.mu-team-slider .slick-prev {
+	left: -60px;
+}
+
+.mu-single-team-info {
+	display: inline;
+	float: left;
+	margin-top: 20px;
+	width: 100%;
+}
+
+.mu-single-team img {
+
+}
+
+.mu-single-team-info h3 {
+	margin-bottom: 4px;
+	font-size: 22px;
+}
+
+.mu-single-team-info p {
+	margin-bottom: 5px;
+}
+
+.mu-single-team-social {
+
+}
+
+.mu-single-team-social li {
+	display: inline-block;
+}
+
+.mu-single-team-social li a {
+	display: inline-block;
+	margin-right: 5px;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
 
 /*--------------------*/
 /* VENUE */
@@ -793,6 +887,7 @@ button:focus {
 #mu-venue {
 	display: inline;
 	float: left;
+	height: 300px;
 	width: 100%;
 }
 
@@ -962,7 +1057,7 @@ button:focus {
 /*--------------------*/
 
 #mu-register {
-	background-image: url("assets/images/register-bg.jpg");
+	background-image: url("assets/images/gister-bg.jpg");
 	background-position: center center;
 	background-size: cover;
 	background-attachment: fixed;
@@ -1026,7 +1121,7 @@ button:focus {
 
 .mu-register-form .form-control:-moz-placeholder { /* Firefox 18- */
 	color: #fff;
-	font-size: 15px; 
+	font-size: 15px;
 }
 
 .mu-register-form .form-control::-moz-placeholder {  /* Firefox 19+ */
@@ -1034,7 +1129,7 @@ button:focus {
 	font-size: 15px;
 }
 
-.mu-register-form .form-control:-ms-input-placeholder {  
+.mu-register-form .form-control:-ms-input-placeholder {
 	color: #fff;
 	font-size: 15px;
 }
@@ -1057,7 +1152,7 @@ button:focus {
 /*--------------------*/
 
 #mu-sponsors {
-	background-color: #fff;
+	background-color: #ffffff;
 	display: inline;
 	float: left;
 	width: 100%;
@@ -1078,12 +1173,13 @@ button:focus {
 }
 
 .mu-sponsors-single {
-	background: #eee;
+	background: #fffff;
 	display: inline;
 	float: left;
 	margin-top: 10px;
 	margin-bottom: 15px;
 	width: 100%;
+	margin-left:35px;
 }
 
 
@@ -1092,7 +1188,7 @@ button:focus {
 /*--------------------*/
 
 #mu-faq {
-	background-color: #f8f8f8;
+	background-color: #fff;
 	display: inline;
 	float: left;
 	position: relative;
@@ -1151,6 +1247,122 @@ button:focus {
 	margin-right: 5px;
 }
 
+/*--------------------*/
+/* TEHEMES */
+/*--------------------*/
+
+
+#mu-themes {
+	background-color: #fff;
+	display: inline;
+	float: left;
+	width: 100%;
+}
+
+.mu-themes-area {
+	display: inline;
+	float: left;
+	padding: 100px 0;
+	width: 100%;
+}
+
+.mu-themes-conten {
+	display: inline;
+	float: left;
+	margin-top: 50px;
+	width: 100%;
+}
+
+.mu-single-price {
+	background-color: #f8f8f8;
+	display: inline;
+	float: left;
+	text-align: center;
+	position: relative;
+	width: 100%;
+	padding: 15px;
+	overflow: hidden;
+}
+
+.mu-single-price-head {
+	color: #555;
+	display: inline;
+	float: left;
+	width: 100%;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+.mu-single-price-head .mu-currency {
+	font-weight: bold;
+	font-size: 30px;
+}
+
+.mu-single-price-head .mu-rate {
+	font-size: 60px;
+	font-weight: bold;
+	line-height: 0.9;
+	letter-spacing: 3px;
+}
+
+.mu-single-price-head .mu-time {
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 0;
+	font-style: italic;
+}
+
+.mu-single-price .mu-price-title {
+	color: #555;
+	font-size: 22px;
+	padding: 10px 0;
+}
+
+.mu-single-price ul {
+	list-style: none;
+}
+
+.mu-single-price ul li{
+	list-style: none;
+	color: #555;
+}
+
+.mu-register-btn {
+	background-color: #fff;
+	border: 1px solid #555;
+	color: #555;
+	margin-top: 20px;
+	padding: 10px 40px;
+	text-align: center;
+	display: inline-block;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.mu-register-btn:hover,
+.mu-register-btn:focus,
+.mu-popular-price .mu-register-btn {
+	color: #fff;
+}
+
+.mu-popular-price .mu-price-tag {
+	color: #fff;
+	display: inline-block;
+	position: absolute;
+	top: 15px;
+	left: -62px;
+	padding: 10px 60px;
+	font-size: 15px;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+	font-weight: 700;
+	transform: rotate(-45deg);
+	text-align: center;
+}
 
 /*--------------------*/
 /* CONTACT US */
@@ -1168,6 +1380,10 @@ button:focus {
 	float: left;
 	padding: 100px 0 50px;
 	width: 100%;
+	background-color: #fff;
+	margin-bottom: 50px;
+	margin-top:50px;
+
 }
 
 .mu-contact-header {
@@ -1184,6 +1400,7 @@ button:focus {
 	margin-top: 50px;
 	padding: 0 20%;
 	width: 100%;
+
 }
 
 
@@ -1220,8 +1437,8 @@ button:focus {
 .mu-contact-form .form-control:focus {
 	background-color: #fff;
     outline: 0;
-    box-shadow: none;    
-} 
+    box-shadow: none;
+}
 
 .mu-contact-form .form-control::-webkit-input-placeholder {
 	color: #888;
@@ -1230,7 +1447,7 @@ button:focus {
 
 .mu-contact-form .form-control:-moz-placeholder { /* Firefox 18- */
 	color: #888;
-	font-size: 15px; 
+	font-size: 15px;
 }
 
 .mu-contact-form .form-control::-moz-placeholder {  /* Firefox 19+ */
@@ -1238,14 +1455,14 @@ button:focus {
 	font-size: 15px;
 }
 
-.mu-contact-form .form-control:-ms-input-placeholder {  
+.mu-contact-form .form-control:-ms-input-placeholder {
 	color: #888;
 	font-size: 15px;
 }
 
 .mu-contact-form .button-default::after,
 .mu-contact-form .button-default > span {
-	padding: 12px 40px;  
+	padding: 12px 40px;
 }
 
 #form-messages {
@@ -1277,6 +1494,41 @@ button:focus {
 	      border-radius: 4px;
 }
 
+/*--------------------*/
+/* awards */
+/*--------------------*/
+
+
+#mu-awards {
+	background-color: #ffffff;
+	display: inline;
+	float: left;
+	width: 100%;
+}
+
+.mu-awards-area {
+	display: inline;
+	float: left;
+	padding: 100px 0;
+	width: 100%;
+}
+
+.mu-awards-conten {
+	display: inline;
+	float: left;
+	margin-top: 50px;
+	width: 100%;
+}
+
+/*--------------------*/
+/* login custom */
+/*--------------------*/
+.login-area{
+
+	background-color: #d9534f;/* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #696e70, #d62220);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #696e70, #d62220); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
 
 
 /*--------------------*/
@@ -1285,7 +1537,8 @@ button:focus {
 
 
 #mu-footer {
-	background-color: #f8f8f8;
+	background-color: #3b3c41;
+;
 	display: inline;
 	float: left;
 	width: 100%;
@@ -1313,9 +1566,9 @@ button:focus {
 }
 
 .mu-social-media a {
-	border: 1px solid #19191a;
+	border: 1px solid #d9534f;
 	border-radius: 50px;
-	color: #19191a;
+	color: #d9534f;
 	display: inline-block;
 	font-size: 12px;
 	margin-right: 10px;
@@ -1375,10 +1628,10 @@ button:focus {
 		right: -25px;
 	}
 
-		
+
 }
 
-@media (max-width: 991px) {	
+@media (max-width: 991px) {
 
 	.mu-primary-btn {
 		font-size: 14px;
@@ -1395,7 +1648,7 @@ button:focus {
 	}
 
 	.mu-hero-featured-content h1 {
-		font-size: 35px;
+		font-size: 25px;
 	}
 
 	.mu-hero-featured-content h2 {
@@ -1479,7 +1732,7 @@ button:focus {
 		height: 40px;
 	}
 
-	.mu-speakers-slider .slick-prev::before, 
+	.mu-speakers-slider .slick-prev::before,
 	.mu-speakers-slider .slick-next::before {
 		font-size: 18px;
 	}
@@ -1497,16 +1750,17 @@ button:focus {
 	}
 
 
-		
+
 }
 
 @media (max-width: 767px) {
 
 	.mu-logo img {
-		width: 150px;
+		width: 340px;
+		height:200px;
 	}
 
-	
+
 	.mu-navbar .navbar-toggle .icon-bar {
 		background-color: #fff;
 	}
@@ -1522,13 +1776,13 @@ button:focus {
 		width: 40px;
 	}
 
-		
-		
+
+
 }
 
 
 @media (max-width: 640px){
-	
+
 	.mu-event-counter-block {
 		height: 100px;
 		width: 100px;
@@ -1561,7 +1815,7 @@ button:focus {
 	.mu-contact-content {
 		padding: 0 10%;
 	}
-				
+
 
 }
 
@@ -1600,7 +1854,7 @@ button:focus {
 	.mu-event-counter-area {
 		margin-top: 20px;
 	}
-	
+
 	.mu-event-counter-block span {
 		font-size: 18px;
 		padding-top: 16px;
@@ -1613,7 +1867,7 @@ button:focus {
 		font-size: 12px;
 		margin: 0 5px;
 	}
-	
+
 	.mu-video-close-btn {
 		top: 2%;
 		right: 5%;
@@ -1654,7 +1908,7 @@ button:focus {
 	.mu-schedule-content {
 		margin-top: 30px;
 	}
-	
+
 	.mu-schedule-menu li {
 		margin-bottom: 15px;
 	}
@@ -1691,15 +1945,16 @@ button:focus {
 	.mu-faq-content .panel-title {
 		font-size: 14px;
 	}
-					
-	
+
+
 }
 
 
 @media (max-width: 360px) {
 
 	.mu-logo img {
-		width: 120px;
+		width: 190px;
+		height: 100px;
 	}
 
 	.mu-hero-featured-area {
@@ -1738,8 +1993,8 @@ button:focus {
 		font-size: 25px;
 	}
 
-	.mu-event-timeline ul li .mu-single-event, 
-	.mu-event-timeline ul li:nth-child(2n+1) .mu-single-event, 
+	.mu-event-timeline ul li .mu-single-event,
+	.mu-event-timeline ul li:nth-child(2n+1) .mu-single-event,
 	.mu-event-timeline ul li:nth-child(2n) .mu-single-event {
 		left: 30px;
 		width: 280px;
@@ -1754,8 +2009,8 @@ button:focus {
 		padding: 30% 5%;
 	}
 
-	.mu-event-timeline ul li .mu-single-event, 
-	.mu-event-timeline ul li:nth-child(2n+1) .mu-single-event, 
+	.mu-event-timeline ul li .mu-single-event,
+	.mu-event-timeline ul li:nth-child(2n+1) .mu-single-event,
 	.mu-event-timeline ul li:nth-child(2n) .mu-single-event {
 		left: 30px;
 		width: 250px;
@@ -1764,8 +2019,10 @@ button:focus {
 	h2 {
 		font-size: 22px;
 	}
-	
-	
-	
+
+
+
 }
+
+
 

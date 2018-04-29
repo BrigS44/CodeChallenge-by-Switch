@@ -2,19 +2,24 @@
 
 @section('content')
 <div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
+    <div class="row">
+        <div class="col-sm-6">
             <div class="card">
-                <div class="card-header">Dashboard</div>
-
                 <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    You are logged in!
+                    <h5 class="card-title">Korisnici</h5>
+                    <p class="card-text">Prikaz korisnika u tablici. Kreiranje korisnika. Uređivanje korisnika.</p>
+                    <a href="{{route('users')}}" class="btn btn-danger">Korisnici</a>
+                    <a href="{{route('users_create')}}" class="btn btn-danger">Dodaj korisnika</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Timovi</h5>
+                    <p class="card-text">Prikaz timova u tablici. Kreiranje timova. Uređivanje podataka tima.</p>
+                    <a href="{{route('teams')}}" class="btn btn-danger">Timovi</a>
+                    <a href="{{route('teams_create')}}" class="btn btn-danger">Dodaj tim</a>
                 </div>
             </div>
         </div>
