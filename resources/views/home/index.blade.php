@@ -75,8 +75,8 @@
 
                     <!-- Authentication Links -->
                     @guest
-                        <li><a href="{{ route('login') }}">{{ __('Login') }}</a></li>
-                        <li><a href="{{ route('register') }}">{{ __('Register') }}</a></li>
+                        <li><a href="{{ route('login') }}">{{ __('Prijava') }}</a></li>
+                        <li><a href="{{ route('register') }}">{{ __('Registracija') }}</a></li>
                         @else
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
@@ -502,6 +502,18 @@
                                 </div>
                                 <!-- End single speaker -->
 
+                                <!-- Start single speaker -->
+                                <div class="mu-single-speakers ">
+                                    <img src="{{ asset('assets/images/avatar.png') }}" alt="speaker img">
+                                    <div class="mu-single-speakers-info">
+                                        <h3></h3>
+                                        <p> predstavnik IT Odjela, Mostar</p>
+                                        <span class="fa fa-envelope"> </span>
+
+                                    </div>
+                                </div>
+                                <!-- End single speaker -->
+
                             </div>
                         </div>
                     </div>
@@ -697,7 +709,7 @@
                         <div class="mu-sponsors-content">
                             <!-- prvi red -->
                             <hr>
-                            <div class="row col-md-12 col-md-offset-1" style="vertical-align: middle">
+                            <div class="row col-md-12 " style="vertical-align: middle">
 
                                 <div class="col-md-2 col-sm-5 col-xs-9 " >
                                     <div class="mu-sponsors-single" style="background-color: white;">
@@ -739,6 +751,14 @@
                                     <div class="mu-sponsors-single" style="background-color: white;">
                                         <a href="https://spark.ba/" target="_blank">
                                             <img src="{{ asset('assets/images/spark.png') }}">
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-2 col-sm-5 col-xs-9 " >
+                                    <div class="mu-sponsors-single" style="background-color: white;">
+                                        <a href="https://spark.ba/" target="_blank">
+                                            <img src="{{ asset('assets/images/katarina.png') }}">
                                         </a>
                                     </div>
                                 </div>
@@ -1144,7 +1164,6 @@
                                                 <ol><p>naziv tima,
                                                         ime i prezime voditelja tima,
                                                         imena i prezimena članova tima,
-                                                        posjedovanje vlastitog prijenosnog računala,
                                                         platforme za razvoj software-a koje će tim koristiti,
                                                         link učitanog programskog rješenja na CloudSoftware-u.
 
@@ -1223,108 +1242,13 @@
                                                         će pregledavati radove ocjenjivat će projekte prema sljedećim
                                                         kategorijama i pripadajućim elementima:
                                                     </p></ol>
-                                                <ol><b><h4>1.Ideja (40%):</h4></b></ol>
-                                                <ul>
-                                                    <ol><b>Inovativnost 0 - 20 bodova</b></ol>
-                                                    <ol><p>0 -rad predstavlja staro rješenje starog problema
-                                                        </p></ol>
-                                                    <ol><p>10 -rad predstavlja novo rješenje starog problema
-                                                        </p></ol>
-                                                    <ol><p>20 -rad predstavlja novo rješenje novog problema
-                                                        </p></ol>
+                                                <ol><b>1.Ideja (40%)</b></ol>
 
-                                                </ul>
-                                                <ul>
-                                                    <ol><b>Plan (vizija): 0 – 5 bodova
-                                                        </b></ol>
-                                                    <ol><p>0 -rad nema nikakav plan za budućnost
-                                                        </p></ol>
-                                                    <ol><p>5 -rad ima realističan i razrađen plan za budućnost
-                                                        </p></ol>
-                                                </ul>
-                                                <ul>
-                                                    <ol><b>Mogućnost primjene rada: 0 – 15 bodova
-                                                        </b></ol>
-                                                    <ol><p>0-rad nije primjenjiv
-                                                        </p></ol>
-                                                    <ol><p>5-rad je primjenjiv, ali je tržište zasićeno sličnim radovima
-                                                        </p></ol>
-                                                    <ol><p>10-rad je primjenjiv, a tržište nije zasićeno sličnim
-                                                            radovima
-                                                        </p></ol>
-                                                    <ol><p>15-rad je primjenjiv, ne postoji slično rješenje na tržištu
-                                                        </p></ol>
+                                                <ol><b>2.Tehnička izvedba(40%)</b></ol>
 
-                                                </ul>
-                                                <ol><b><h4>2.Tehnička izvedba(40%):</h4></b></ol>
-                                                <ul>
-                                                    <ol><b>Složenost: 0 – 20 bodova</b></ol>
-                                                    <ol><p>0-struktura rada je jednostavna i rad ne sadrži nikakve
-                                                            autorske algoritme
+                                                <ol><b>3.Dizajn (10%)</b></ol>
 
-                                                        </p></ol>
-                                                    <ol><p>120-struktura rada je složena i rad sadrži autorske algoritme
-
-                                                        </p></ol>
-
-                                                </ul>
-                                                <ul>
-                                                    <ol><b>Praćenje prakse i konvencija: 0 – 20 bodova
-                                                        </b></ol>
-                                                    <ol><p>0-kod je neuredan, loše organiziran i bez komentara
-
-                                                        </p></ol>
-                                                    <ol><p>20-kod je uredan, smislen, dobro organiziran i popraćen
-                                                            komentarima
-
-                                                        </p></ol>
-                                                </ul>
-                                                <ol><b><h4>3.Dizajn (10%):</h4></b></ol>
-                                                <ul>
-                                                    <ol><b>Ujednačenost dizajna: 0 - 5
-                                                        </b></ol>
-                                                    <ol><p>0- korištene boje i elementi kroz aplikaciju nisu ujednačeni
-
-
-                                                        </p></ol>
-                                                    <ol><p>5- korištene boje i elementi kroz aplikaciju su ujednačeni
-
-
-                                                        </p></ol>
-
-                                                </ul>
-                                                <ul>
-                                                    <ol><b>PVizualni identitet: 0 - 5 bodova
-
-                                                        </b></ol>
-                                                    <ol><p>0- Aplikacija nema jedinstven logo i vizualni identitet
-
-                                                        </p></ol>
-                                                    <ol><p>5- Aplikacija ima jedinstven logo i vizualni identitet
-
-
-                                                        </p></ol>
-                                                </ul>
-
-                                                <ol><b><h4>4. Prezentacija i dokumentacija(10%):</h4></b></ol>
-                                                <ul>
-                                                    <ol><b>Prezentacija: 0 – 5 bodova</b></ol>
-                                                    <ol><p>0-nastup natjecatelja pri predstavljanju rada je neuvjerljiv
-                                                            i nesiguran, nije uspješno prezentirao sve aspekte projekta
-                                                        </p></ol>
-                                                    <ol><p>5-nastup natjecatelja pri predstavljanju rada je uvjerljiv i
-                                                            siguran, uspješno je prezentirao sve aspekte projekta
-                                                        </p></ol>
-                                                </ul>
-                                                <ul>
-                                                    <ol><b>Dokumentacija: 0 - 5 bodova</b></ol>
-                                                    <ol><p>0-dokumentacija je površna, nepregledna i ne pokriva
-                                                            cjelokupni projekt
-                                                        </p></ol>
-                                                    <ol><p>5-dokumentacija je opsežna, dobro organizirana, pokriva sve
-                                                            aspekte projekta
-                                                        </p></ol>
-                                                </ul>
+                                                <ol><b>4. Prezentacija i dokumentacija(10%)</b></ol>
 
                                             </ul>
                                         </div>

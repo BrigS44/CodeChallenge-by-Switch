@@ -55,23 +55,29 @@
                             </div>
 
                             <div class="form-group row col-md-12">
-                                <div class="col-md-10">
+                                <div class="col-md-9">
                                     <div class="checkbox">
                                         <label>
                                             <input type="checkbox"
-                                                   name="remember" {{ old('remember') ? 'checked' : '' }}> {{ __('Remember Me') }}
+                                                   name="remember" {{ old('remember') ? 'checked' : '' }}> {{ __('Zapamti me') }}
                                         </label>
                                     </div>
                                 </div>
-                            </div>
 
+                            </div>
                             <div class="form-group row mb-0 justify-content-center">
-                                <div class="col-md-8">
-                                    <button type="submit" class="btn btn-primary btn-block" style="background-color: #D9534F; border-color: #D9534F">
-                                        {{ __('Prijavi se') }}
+                                <div class="col-md-6">
+                                    <button type="submit" class="btn btn-primary btn-block" style="background-color: #D9534F; border-color: #D9534F; margin-bottom: 6px;">
+                                        {{ __('Prijava') }}
                                     </button>
 
 
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="checkbox">
+                                            <a type="button" class="btn btn-default btn-block" href="{{ route('register') }}" style="color: #D9534F; border: solid 1px #D9534F">{{ __('Registracija') }}</a>
+
+                                    </div>
                                 </div>
                             </div>
                         </form>
