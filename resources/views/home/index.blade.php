@@ -37,7 +37,10 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body>
+<body
+
+@if(Auth()->user())
+onload="teamRegister()"@endif>
 
 <!-- Start Header -->
 <header id="mu-hero" class="" role="banner">
@@ -78,7 +81,7 @@
                         <li><a href="{{ route('login') }}">{{ __('Prijava') }}</a></li>
                         <li><a href="{{ route('register') }}">{{ __('Registracija') }}</a></li>
                         @else
-                            <li class="dropdown">
+                            <li class="dropdown" >
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
                                    aria-expanded="false" aria-haspopup="true">
                                     {{ Auth::user()->name }} <span class="caret"></span>
@@ -176,8 +179,8 @@
                     <div class="mu-hero-featured-content">
 
                         <h1><b>#codeForTheFuture</b></h1>
-                        <p class="mu-event-date-line">24 - 25 Svibanj, 2018. Mostar, BiH</p>
-
+                        <p class="mu-event-date-line" style="font-size: 23px;">24 - 25 Svibanj, 2018. Mostar, BiH</p><br>
+                        <p class="mu-event-date-line" style="font-size: 19px;"> Prijave traju do 21. Svibnja</p>
                         <div class="mu-event-counter-area">
                             <div id="mu-event-counter">
 
@@ -1373,6 +1376,16 @@
 <!-- Ajax contact form  -->
 <script type="text/javascript" src="{{ asset('assets/js/app.js') }}"></script>
 
+<script>
+    function teamRegister() {
+        if (window.confirm('PRIJAVITE SVOJ TIM! ' +
+                'Klikom na "OK" otvorit će Vam se forma za prijavu tima! '))
+        {
+            window.location.href='{{route('team_ucreate')}}';
+        };
+
+    }
+</script>
 
 <!-- Custom js -->
 <script type="text/javascript" src="{{ asset('assets/js/custom.js') }}"></script>
