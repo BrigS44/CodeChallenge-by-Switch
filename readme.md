@@ -8,10 +8,10 @@ We encourage contestants to create open source software solutions. Competitors c
 
 **REQUIREMENTS AND TECHNOLOGIES** 
 
-  LARAVEL 5.6. (see documentation: https://laravel.com/docs/5.6)
-  PHP 7.0
-  Composer (download link: https://getcomposer.org/)
-  Bootstrap (3.7 and 4.0)
+ * LARAVEL 5.6. (see documentation: https://laravel.com/docs/5.6)
+ * PHP 7.0
+ * Composer (download link: https://getcomposer.org/)
+ * Bootstrap (3.7 and 4.0)
   
 **SCREENSHOTS OF SYSTEM**
 
